@@ -1,5 +1,6 @@
 package combr.com.player.registration.playerregistration.models;
 
+import combr.com.player.registration.playerregistration.dtos.PlayerDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,10 +9,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity(name = "Player")
 @Table(name = "players")
+@NoArgsConstructor
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,4 +33,10 @@ public class Player {
     @Column(name = "grupo", nullable = false)
     private String grupo;
 
+    public Player(PlayerDto dados) {
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.telefone = dados.telefone();
+        this.grupo = dados.grupo();
+    }
 }
