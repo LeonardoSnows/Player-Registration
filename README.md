@@ -15,7 +15,7 @@ This project was created based on this challenge: https://github.com/uolhost/tes
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-
+- [Template](#template)
 
 ## Installation
 1. Clone the repository:
@@ -45,3 +45,9 @@ POST /list/players - List of all players
 
 ## Front - List of all players
 ![img_1.png](img_1.png)
+
+## Template
+
+```markdown
+https://colorlib.com/wp/template/colorlib-regform-9/
+```
