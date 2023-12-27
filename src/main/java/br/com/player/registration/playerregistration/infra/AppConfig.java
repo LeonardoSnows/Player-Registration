@@ -1,4 +1,4 @@
-package combr.com.player.registration.playerregistration.infra;
+package br.com.player.registration.playerregistration.infra;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

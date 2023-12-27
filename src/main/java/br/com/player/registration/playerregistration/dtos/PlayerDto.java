@@ -1,4 +1,4 @@
-package combr.com.player.registration.playerregistration.dtos;
+package br.com.player.registration.playerregistration.dtos;
 
 import jakarta.validation.constraints.*;
 

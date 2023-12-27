@@ -1,8 +1,7 @@
-package combr.com.player.registration.playerregistration.models;
+package br.com.player.registration.playerregistration.models;
 
-import combr.com.player.registration.playerregistration.dtos.PlayerDto;
+import br.com.player.registration.playerregistration.dtos.PlayerDto;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

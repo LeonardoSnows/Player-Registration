@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="main">
+    <div class="container">
+        <table class="table table-dark table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Codinome</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Edicao de dados</th>
+                <th scope="col">Exclusao de dados</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="jogador : ${jogadores}">
+                <td th:text="${jogador.id}"></td>
+                <td th:text="${jogador.nome}"></td>
+                <td th:text="${jogador.email}"></td>
+                <td th:text="${jogador.telefone}"></td>
+                <td th:text="${jogador.codinome}"></td>
+                <td th:text="${jogador.grupo}"></td>
+                <td><a href="#" class="btn btn-warning">editar</a></td>
+                <td><a href="#" class="btn btn-danger">excluir</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="/register" class="submit-link submit" style="width: 170px">Cadastro</a>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script> $('.telefone').mask('(00) 0000-0000')</script>
+</body>
+</html>

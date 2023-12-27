@@ -1,4 +1,4 @@
-package combr.com.player.registration.playerregistration.services;
+package br.com.player.registration.playerregistration.services;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

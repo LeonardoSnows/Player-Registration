@@ -1,4 +1,4 @@
-package combr.com.player.registration.playerregistration;
+package br.com.player.registration.playerregistration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
